@@ -62,4 +62,3 @@ var ajax=function(obj){
 	}
 	self._xhr.send(self._data);
 };
-ajax({url:'https://amironov.city-travel.ru/api/message/get'});
