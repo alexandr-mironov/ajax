@@ -4,7 +4,9 @@ very very light weight ajax on plain js
 ## Quick start
 How to get:
 
-`<script src=""></script>`
+Just add this in your source code 
+//TODO: add version independed link
+`<script src="https://github.com/alexandr-mironov/ajax/releases/download/v0.1/ajax.min.js"></script>`
 
 How to use:
 
