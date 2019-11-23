@@ -1,7 +1,6 @@
 var ajax=function(obj){
 	if(obj.url==void 0){
-		console.err('Error: url not defined!');
-		throw DOMException('Error: url not defined!');
+		throw Error('Error: url not defined!');
 	}
 	self=this;
 	self._url=obj.url;
@@ -12,7 +11,6 @@ var ajax=function(obj){
 	self._beforeSend=(obj.beforeSend)?obj.beforeSend:null;
 	self._onError=(obj.beforeSend)?obj.beforeSend:null;
 	self._onSuccess=(obj.success)?obj.success:null;
-	console.log([this]);
 	if(self._method=='POST'){
 		if(Object.keys(obj.data).length>0 && obj.data instanceof Object && !(obj.data instanceof FormData)){
 			//for(let [name,value] of data){
@@ -26,7 +24,7 @@ var ajax=function(obj){
 			}
 		}
 	}else if(self._method=='GET'){
-		if(Object.keys(this._data).length>0){
+		if(Object.keys(self._data).length>0){
 			url="";
 			for(let [name,value] of self._data){
 				url+=name+"="+value+"&";
