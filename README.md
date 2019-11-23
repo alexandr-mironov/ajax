@@ -33,6 +33,9 @@ ajax({
 
 **success**: not require, function or callback, function be executed if request has 200 answer
 
+## Browsers compatible
+
+This will work with all new versions of browsers, it may be work on IE 11 (but i don't sure, cause can't install it on my Mac, only one thing may not work in IE - `let [name,value] of self._data` it eazy to replace with compatible code)
 
 ## Example
 
