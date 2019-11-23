@@ -2,6 +2,7 @@
 very very light weight ajax on plain js
 
 How to use:
+```
 ajax({
     url: 'https://someUrl.toSomeDomain', //required, string, just url you want to send request
     method: 'GET' or 'POST', //not required, string, in this moment only GET or POST are acceptable
@@ -11,3 +12,4 @@ ajax({
     onError: function(){}, //not require, function or callback
     success: function(){}, //not require, function or callback
 });
+```
