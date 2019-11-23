@@ -1,10 +1,16 @@
 # ajax
 very very light weight ajax on plain js
 
+## Quick start
+How to get:
+
+`<script src=""></script>`
+
 How to use:
+
 ```
 ajax({
-    url: 'https://someUrl.toSomeDomain', //required, string, just url you want to send request
+    url: 'https://someUrl.atSomeDomain', //required, string, just url you want to send request
     method: 'GET' or 'POST', //not required, string, in this moment only GET or POST are acceptable
     data: {}, //not required, object or FormData object, you can eazily put here some form, for ex.: document.querySelector('form[name="someName"]') and it will work
     header: {}, //not required, object 
@@ -26,3 +32,8 @@ ajax({
 **onError**: not require, function or callback, function be executed if request has no 200 answer
 
 **success**: not require, function or callback, function be executed if request has 200 answer
+
+
+## Example
+
+`ajax({url:'https://yandex.ru'});` //Send GET request to yandex.ru
