@@ -9,7 +9,7 @@ var ajax=function(obj){
 	self._data=(obj.data!=void 0  && data instanceof FormData)?obj.data:new FormData();
 	self._header=(obj.headers instanceof Object && Object.keys(obj.headers).length>0)?obj.headers:{};
 	self._beforeSend=(obj.beforeSend)?obj.beforeSend:null;
-	self._onError=(obj.beforeSend)?obj.beforeSend:null;
+	self._onError=(obj.onError)?obj.onError:null;
 	self._onSuccess=(obj.success)?obj.success:null;
 	if(self._method=='POST'){
 		if(Object.keys(obj.data).length>0 && obj.data instanceof Object && !(obj.data instanceof FormData)){
