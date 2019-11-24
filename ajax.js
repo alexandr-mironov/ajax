@@ -30,7 +30,7 @@ var ajax=function(obj){
 				url+=name+"="+value+"&";
 			}
 			url=url.slice(0,-1);
-			self._url+=((url.length>0)?((self._url.indexOf("?")>-1)?"?":"&")+url:'');
+			self._url+=((url.length>0)?((self._url.indexOf("?")>-1)?"&":"?")+url:'');
 		}
 	}
 	self._xhr.open(self._method,self._url);
