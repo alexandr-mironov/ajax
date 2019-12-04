@@ -27,7 +27,7 @@ ajax({
 
 **method**: not required, string, in this moment only GET or POST are acceptable
 
-**data**: not required, object or FormData object, you can eazily put here some form, for ex.: `document.querySelector('form[name="someName"]')` and it will work
+**data**: not required, object or FormData object, you can eazily put here some form, for ex.: `new FormData(document.querySelector('form[name="someName"]'))` and it will work
 
 **header**: not required, object 
 
