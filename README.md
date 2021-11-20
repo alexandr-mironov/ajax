@@ -12,7 +12,7 @@ Just add this in your source code
 
 How to use:
 
-```
+```javascript
 ajax({
     url: 'https://someUrl.atSomeDomain', //required, string
     method: 'GET' or 'POST', //not required, string
